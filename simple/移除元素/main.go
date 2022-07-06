@@ -13,8 +13,8 @@ func removeElement(nums []int, val int) int {
 		}
 		findIndex += 1
 	}
-	fmt.Printf("nums: %v\n", nums)
-	return index + 1
+	// fmt.Printf("nums: %v\n", nums)
+	return index
 }
 
 func main() {

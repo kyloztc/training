@@ -17,7 +17,7 @@ func removeDuplicates(nums []int) int {
 			count += 1
 		}
 	}
-	fmt.Printf("%v\n", nums)
+	// fmt.Printf("%v\n", nums)
 	return count
 }
 
