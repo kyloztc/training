@@ -14,7 +14,7 @@ func pairSum(head *ListNode) int {
 		slowPtr = slowPtr.Next
 		fastPtr = fastPtr.Next.Next
 	}
-	fmt.Printf("slow: %v\n", slowPtr.Val)
+	// fmt.Printf("slow: %v\n", slowPtr.Val)
 	halfPtr := slowPtr.Next
 	slowPtr.Next = nil
 	for halfPtr != nil {
@@ -23,7 +23,7 @@ func pairSum(head *ListNode) int {
 		slowPtr.Next = halfPtr
 		halfPtr = tmp
 	}
-	head.Walk()
+	// head.Walk()
 	maxValue := 0
 	halfPtr = slowPtr.Next
 	for halfPtr != nil {
